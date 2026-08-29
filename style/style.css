@@ -99,7 +99,6 @@ p,
 .summary-stats {
   flex-direction: column;
   display: flex;
-  justify-content: space-around;
   align-items: center;
 }
 .summary-heading,
@@ -197,4 +196,19 @@ p,
 .pill-of {
   color: var(--grey-blue);
   font-weight: 300;
+}
+.continue-button {
+  display: block;
+  background-color: var(--grey-blue);
+  width: 80%;
+  height: 45px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 25px;
+  margin-bottom: 35px;
+  border-radius: 20px;
+}
+.continue-button p {
+  color: var(--white);
 }
