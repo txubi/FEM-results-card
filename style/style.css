@@ -72,10 +72,11 @@ h1 {
   margin: 0;
 }
 h1,
-p {
+p,
+.result-number-of {
   color: var(--light-lavender);
 }
-.result-text {
+.result-text-title {
   font-size: calc(25px / 18px * 1rem);
 }
 .result-title,
@@ -89,7 +90,16 @@ p {
 .result-text {
   color: var(--white);
 }
-p,
+.circle-results {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(var(--violet-blue), var(--persian-blue));
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+}
 .summary-stats {
   font-family: "Hanken Grotesk", sans-serif;
   font-optical-sizing: auto;
