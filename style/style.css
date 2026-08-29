@@ -116,8 +116,8 @@ p,
   align-items: center;
   background: linear-gradient(var(--violet-blue), var(--persian-blue));
   border-radius: 50%;
-  height: 100px;
-  width: 100px;
+  height: 120px;
+  width: 120px;
 }
 .summary-stats {
   font-family: "Hanken Grotesk", sans-serif;
