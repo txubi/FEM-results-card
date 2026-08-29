@@ -61,14 +61,15 @@ html {
 .results {
   height: 50vh;
   background: linear-gradient(var(--slate-blue), var(--royal-blue));
-  border-radius: 0 0 20px 20px;
+  border-radius: 0 0 calc(20px / var(--default-font) * 1rem)
+    calc(20px / var(--default-font) * 1rem);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
 }
 .result-title {
-  padding-top: 20px;
+  padding-top: calc(20px / var(--default-font) * 1rem);
 }
 strong {
   font-weight: 800;
@@ -84,14 +85,14 @@ p,
   color: var(--light-lavender);
 }
 .result-text-title {
-  font-size: calc(25px / 18px * 1rem);
+  font-size: calc(25px / var(--default-font) * 1rem);
 }
 .result-title,
 .summary-heading {
-  font-size: calc(20px / 18px * 1rem);
+  font-size: calc(20px / var(--default-font) * 1rem);
 }
 .result-number {
-  font-size: calc(55px / 18px * 1rem);
+  font-size: calc(55px / var(--default-font) * 1rem);
 }
 .result-number,
 .result-text {
@@ -106,8 +107,8 @@ p,
 .result-text p {
   width: 70%;
   margin: 0;
-  padding-top: 10px;
-  padding-bottom: 20px;
+  padding-top: calc(10px / var(--default-font) * 1rem);
+  padding-bottom: calc(20px / var(--default-font) * 1rem);
 }
 .result-text-title {
   margin: 0;
@@ -119,8 +120,8 @@ p,
   align-items: center;
   background: linear-gradient(var(--violet-blue), var(--persian-blue));
   border-radius: 50%;
-  height: 120px;
-  width: 120px;
+  height: calc(120px / var(--default-font) * 1rem);
+  width: calc(120px / var(--default-font) * 1rem);
 }
 .summary-stats {
   font-family: "Hanken Grotesk", sans-serif;
@@ -137,14 +138,14 @@ p,
   width: 80%;
 }
 .pill {
-  height: 45px;
-  margin-top: 10px;
-  border-radius: 10px;
-  padding: 0 15px;
+  height: calc(45px / var(--default-font) * 1rem);
+  margin-top: calc(10px / var(--default-font) * 1rem);
+  border-radius: calc(10px / var(--default-font) * 1rem);
+  padding: 0 calc(15px / var(--default-font) * 1rem);
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-size: 15px;
+  font-size: calc(15px / var(--default-font) * 1rem);
 }
 .reaction {
   background-color: var(--light-red-t);
@@ -153,13 +154,13 @@ p,
   display: inline-flex;
   align-items: center;
   color: var(--light-red);
-  border-radius: 10px;
+  border-radius: calc(10px / var(--default-font) * 1rem);
 }
 .reaction .label::before {
   content: "";
   display: inline-block;
-  height: 23px;
-  width: 23px;
+  height: calc(23px / var(--default-font) * 1rem);
+  width: calc(23px / var(--default-font) * 1rem);
   padding-right: 10px;
   background-image: url("../assets/images/icon-reaction.svg");
   background-size: contain;
@@ -171,15 +172,15 @@ p,
 .memory .label {
   display: inline-flex;
   align-items: center;
-  gap: 10px;
+  gap: calc(10px / var(--default-font) * 1rem);
   color: var(--orangey-yellow);
-  border-radius: 10px;
+  border-radius: calc(10px / var(--default-font) * 1rem);
 }
 .memory .label::before {
   content: "";
   display: inline-block;
-  height: 23px;
-  width: 23px;
+  height: calc(23px / var(--default-font) * 1rem);
+  width: calc(23px / var(--default-font) * 1rem);
   background-image: url("../assets/images/icon-memory.svg");
   background-size: contain;
   background-repeat: no-repeat;
@@ -191,15 +192,15 @@ p,
 .verbal .label {
   display: inline-flex;
   align-items: center;
-  gap: 10px;
+  gap: calc(10px / var(--default-font) * 1rem);
   color: var(--grean-teal);
-  border-radius: 10px;
+  border-radius: calc(10px / var(--default-font) * 1rem);
 }
 .verbal .label::before {
   content: "";
   display: inline-block;
-  height: 23px;
-  width: 23px;
+  height: calc(23px / var(--default-font) * 1rem);
+  width: calc(23px / var(--default-font) * 1rem);
   background-image: url("../assets/images/icon-verbal.svg");
   background-size: contain;
   background-repeat: no-repeat;
@@ -210,7 +211,7 @@ p,
 .visual .label {
   display: inline-flex;
   align-items: center;
-  gap: 10px;
+  gap: calc(10px / var(--default-font) * 1rem);
   color: var(--cobalt-blue);
 
   border-radius: 10px;
@@ -218,8 +219,8 @@ p,
 .visual .label::before {
   content: "";
   display: inline-block;
-  height: 20px;
-  width: 20px;
+  height: calc(20px / var(--default-font) * 1rem);
+  width: calc(20px / var(--default-font) * 1rem);
   background-image: url("../assets/images/icon-visual.svg");
   background-size: contain;
   background-repeat: no-repeat;
@@ -233,13 +234,13 @@ p,
   display: block;
   background-color: var(--grey-blue);
   width: 80%;
-  height: 50px;
+  height: calc(50px / var(--default-font) * 1rem);
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  margin-top: 25px;
-  margin-bottom: 35px;
-  border-radius: 30px;
+  margin-top: calc(25px / var(--default-font) * 1rem);
+  margin-bottom: calc(35px / var(--default-font) * 1rem);
+  border-radius: calc(30px / var(--default-font) * 1rem);
 }
 .continue-button p {
   color: var(--white);
