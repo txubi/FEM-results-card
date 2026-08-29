@@ -62,6 +62,10 @@ html {
   height: 45vh;
   background: linear-gradient(var(--slate-blue), var(--royal-blue));
   border-radius: 0 0 20px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
 }
 strong {
   font-weight: 800;
@@ -89,6 +93,21 @@ p,
 .result-number,
 .result-text {
   color: var(--white);
+}
+.result-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.result-text p {
+  width: 70%;
+  margin: 0;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+.result-text-title {
+  margin: 0;
 }
 .circle-results {
   display: flex;
