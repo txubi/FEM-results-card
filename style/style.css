@@ -55,7 +55,8 @@ html {
 }
 .results {
   height: 45vh;
-  background-color: tomato;
+  background: linear-gradient(var(--slate-blue), var(--royal-blue));
+  border-radius: 0 0 20px 20px;
 }
 h1 {
   font-size: var(--default-font);
