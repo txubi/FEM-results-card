@@ -54,10 +54,27 @@ html {
   font-size: var(--default-font);
 }
 
+h1 {
+  font-size: var(--default-font);
+}
+.result-text {
+  font-size: calc(25px / 18px * 1rem);
+}
+.result-title,
+.summary-heading {
+  font-size: calc(20px / 18px * 1rem);
+}
+
+.result-number {
+  font-size: calc(55px / 18px * 1rem);
+}
 p,
 .summary-stats {
   font-family: "Hanken Grotesk", sans-serif;
   font-optical-sizing: auto;
   font-weight: 500;
   font-style: normal;
+}
+.score {
+  font-weight: 800;
 }
