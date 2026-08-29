@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap");
+
 * {
   box-sizing: border-box;
 }
@@ -25,6 +27,37 @@
   --gray-blue: hsl(224, 30%, 27%);
 }
 
+/* Typography */
+
+.hanken-grotesk-500 {
+  font-family: "Hanken Grotesk", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.hanken-grotesk-700 {
+  font-family: "Hanken Grotesk", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.hanken-grotesk-800 {
+  font-family: "Hanken Grotesk", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+}
+
 html {
   font-size: var(--default-font);
+}
+
+p,
+.summary-stats {
+  font-family: "Hanken Grotesk", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
 }
