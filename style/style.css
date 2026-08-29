@@ -1,0 +1,11 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --default-font: 16px;
+}
+
+html {
+  font-size: var(--default-font);
+}
