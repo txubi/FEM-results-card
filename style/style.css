@@ -6,7 +6,7 @@
 
 :root {
   /* default font */
-  --default-font: 18px;
+  --default-font: 16px;
 
   /* Primary */
   --light-red-t: hsla(0, 100%, 67%, 4.5%);
@@ -96,40 +96,55 @@ p,
   font-weight: 500;
   font-style: normal;
 }
-
+.summary-stats {
+  flex-direction: column;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.summary-heading,
 .pill {
-  width: 90%;
-  height: 55px;
+  width: 80%;
+}
+.pill {
+  height: 45px;
   margin-top: 10px;
-  margin-bottom: 10px;
+  border-radius: 10px;
+  padding: 0 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .reaction {
+  background-color: var(--light-red-t);
+}
+.reaction .label {
   display: inline-flex;
   align-items: center;
-  gap: 10px;
   color: var(--light-red);
-  background-color: var(--light-red-t);
   border-radius: 10px;
 }
-.reaction::before {
+.reaction .label::before {
   content: "";
   display: inline-block;
   height: 23px;
   width: 23px;
+  padding-right: 10px;
   background-image: url("../assets/images/icon-reaction.svg");
   background-size: contain;
   background-repeat: no-repeat;
 }
-
 .memory {
+  background-color: var(--orangey-yellow-t);
+}
+.memory .label {
   display: inline-flex;
   align-items: center;
   gap: 10px;
   color: var(--orangey-yellow);
-  background-color: var(--orangey-yellow-t);
   border-radius: 10px;
 }
-.memory::before {
+.memory .label::before {
   content: "";
   display: inline-block;
   height: 23px;
@@ -140,14 +155,16 @@ p,
 }
 
 .verbal {
+  background-color: var(--grean-teal-t);
+}
+.verbal .label {
   display: inline-flex;
   align-items: center;
   gap: 10px;
   color: var(--grean-teal);
-  background-color: var(--grean-teal-t);
   border-radius: 10px;
 }
-.verbal::before {
+.verbal .label::before {
   content: "";
   display: inline-block;
   height: 23px;
@@ -156,16 +173,18 @@ p,
   background-size: contain;
   background-repeat: no-repeat;
 }
-
 .visual {
+  background-color: var(--cobalt-blue-t);
+}
+.visual .label {
   display: inline-flex;
   align-items: center;
   gap: 10px;
   color: var(--cobalt-blue);
-  background-color: var(--cobalt-blue-t);
+
   border-radius: 10px;
 }
-.visual::before {
+.visual .label::before {
   content: "";
   display: inline-block;
   height: 23px;
