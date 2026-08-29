@@ -53,9 +53,13 @@
 html {
   font-size: var(--default-font);
 }
-
+.results {
+  height: 45vh;
+  background-color: tomato;
+}
 h1 {
   font-size: var(--default-font);
+  margin: 0;
 }
 .result-text {
   font-size: calc(25px / 18px * 1rem);
