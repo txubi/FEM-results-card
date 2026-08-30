@@ -246,6 +246,7 @@ p,
   margin-top: calc(25px / var(--default-font) * 1rem);
   margin-bottom: calc(35px / var(--default-font) * 1rem);
   border-radius: calc(30px / var(--default-font) * 1rem);
+  cursor: pointer;
 }
 .continue-button p {
   color: var(--white);
