@@ -124,8 +124,8 @@ p,
   align-items: center;
   background: linear-gradient(var(--violet-blue), var(--persian-blue));
   border-radius: 50%;
-  height: calc(120px / var(--default-font) * 1rem);
-  width: calc(120px / var(--default-font) * 1rem);
+  height: calc(150px / var(--default-font) * 1rem);
+  width: calc(150px / var(--default-font) * 1rem);
 }
 .summary-stats {
   font-family: "Hanken Grotesk", sans-serif;
@@ -268,19 +268,24 @@ main {
   }
   .underbritches {
     display: flex;
-    width: 500px;
+    width: calc(500px / var(--default-font) * 1rem);
     background-color: var(--white);
     border-radius: 25px;
   }
   .summary-stats {
     margin: 0;
+    padding-top: calc(22px / var(--default-font) * 1rem);
     /* width: 390px; */
     background-color: var(--white);
   }
   .summary-stats,
   .results {
-    height: 380px;
-    width: 250px;
+    height: calc(380px / var(--default-font) * 1rem);
+    width: calc(250px / var(--default-font) * 1rem);
     border-radius: 25px;
+  }
+  .result-title,
+  .summary-heading {
+    font-size: calc(14px / var(--default-font) * 1rem);
   }
 }
