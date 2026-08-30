@@ -31,7 +31,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [Solution](https://www.frontendmentor.io/solutions/responsive-card-that-uses-flexbox-and-mobile-first-ZM11sDiAKz)
 - Live Site URL: [Live Site](https://txubi.github.io/FEM-results-card/)
 
 ## My process
