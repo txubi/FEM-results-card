@@ -250,6 +250,9 @@ p,
 .continue-button p {
   color: var(--white);
 }
+.continue-button:hover {
+  background-color: var(--royal-blue);
+}
 main {
   display: flex;
   justify-content: center;
