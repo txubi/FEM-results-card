@@ -27,6 +27,7 @@
 
   /* Neutrals */
   --white: hsl(0, 0%, 100%);
+  --white-t: hsla(0, 0%, 100%, 40%);
   --pale-blue: hsl(221, 100%, 96%);
   --light-lavender: hsl(241, 100%, 89%);
   --grey-blue: hsl(224, 30%, 27%);
@@ -98,6 +99,9 @@ p,
 .result-text {
   color: var(--white);
 }
+.result-number-of {
+  color: var(--white-t);
+}
 .result-text {
   display: flex;
   flex-direction: column;
@@ -131,6 +135,7 @@ p,
   flex-direction: column;
   display: flex;
   align-items: center;
+  height: 50vh;
   margin-top: 12px;
 }
 .summary-heading,
@@ -244,4 +249,35 @@ p,
 }
 .continue-button p {
   color: var(--white);
+}
+main {
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+}
+@media (min-width: 768px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    background-color: var(--pale-blue);
+  }
+  .underbritches {
+    display: flex;
+    width: 500px;
+    background-color: var(--white);
+    border-radius: 25px;
+  }
+  .summary-stats {
+    margin: 0;
+    /* width: 390px; */
+    background-color: var(--white);
+  }
+  .summary-stats,
+  .results {
+    height: 380px;
+    width: 250px;
+    border-radius: 25px;
+  }
 }
